@@ -13,11 +13,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
     <!-- STYLES CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/boton.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 </head>
 
 <body>
     <header>
+
+      
+
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
@@ -352,6 +359,35 @@
     </div>
 
 
+  <!-- Boton inicio-->
+
+  <button class="btn-scrolltop" id="btn_scrolltop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script>
+    const btn_scrolltop = document.getElementById("btn_scrolltop")
+      btn_scrolltop.addEventListener('click', () => {
+        window.scrollTo(0, 0)
+      })
+
+    window.onscroll = () => {
+      add_btn_scrolltop()
+    }
+
+    const add_btn_scrolltop = () => {
+      if (window.scrollY < 300) {
+        btn_scrolltop.classList.remove("btn-scrolltop-on")
+      } else {
+        btn_scrolltop.classList.add("btn-scrolltop-on")
+      }
+    }
+
+  </script>
+
+<!-- Boton inicio -->
+
+
+
    <!-- Footer -->
    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
     <!-- Section: Social media -->
@@ -428,7 +464,7 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-
+  <script src="js/main.js"></script>
 </body>
 
 <!-- MDB -->
