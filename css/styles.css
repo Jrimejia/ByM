@@ -29,6 +29,11 @@
     background: rgba(0, 0, 0, 0.2);
 }
 
+.bg-body-tertiary {
+    background-color: rgb(199, 197, 197);
+}
+
+
 .description {
     margin-top: 50px;
     margin-left: 350px;
@@ -43,7 +48,7 @@
     
     padding: 10px 10px 20px 10px;
     width: 290px;
-    border-radius: 175px;
+    border-radius: 200px;
 }
 
 .skill {
