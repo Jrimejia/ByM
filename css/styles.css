@@ -66,10 +66,17 @@
     justify-content: center;
 }
 
+
+
+
+/* MODIFICAR EL TAMAÑO DE LAS IMAGENES DE LOS PRODUCTOS CON EL WIDTH - REM */
 .portafolio .card {
     margin-top: 40px;
     width: 21rem;
 }
+/* MODIFICAR EL TAMAÑO DE LAS IMAGENES DE LOS PRODUCTOS CON EL WIDTH - REM */
+
+
 
 .experiencia img {
     margin-right: 15px;
